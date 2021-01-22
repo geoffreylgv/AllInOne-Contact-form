@@ -90,7 +90,57 @@
 					</p>
 				</div>
 			</div>
-			
+			<div class="tile is-parent">
+				<div class="tile is-child box">
+					<p class="title">
+					<div class="panel">
+						<div class="">
+							<div id="mail-status"></div>
+						</div>
+
+						<div>
+							<div class="field">
+								<div class="control">
+									<label style="padding-top:20px;">Name</label>
+									<span id="userName-info" class="info"></span><br />
+									<input type="text" name="userName" id="userName" placeholder="Votre nom" class="input is-rounded">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="field">
+								<div class="control">
+									<label>Email</label>
+									<span id="userEmail-info" class="info"></span><br />
+									<input type="text" name="userEmail" id="userEmail" placeholder="Votre mail" class="input is-rounded">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="field">
+								<div class="control">
+									<label>Subject</label>
+									<span id="subject-info" class="info"></span><br />
+									<input type="text" name="subject" id="subject" placeholder="Objet du message" class="input is-rounded">
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="field">
+								<div class="control">
+									<label>Content</label>
+									<span id="content-info" class="info"></span><br />
+									<textarea name="content" id="content" class="textarea is-rounded" cols="9" rows="3" placeholder="Votre message ici" style="border-radius: 20px;"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="field" style="margin-top: 10px;">
+							<button name="submit" id="btnSend" class="button is-fullwidth is-primary is-outlined is-rounded" onClick="sendContact();">Send</button>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
 		</div>
 
 
