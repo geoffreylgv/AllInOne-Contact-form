@@ -75,4 +75,27 @@
 	</script>
 </head>
 
+<body>
+	<div class="container" style="padding-top: 90px;">
+		<div class="tile is-ancestor">
+			<div class="tile is- is-vertical">
+				<div class="tile is-child box">
+					<p class="title">
+					<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="fr_FR" data-type="vertical" data-theme="light" data-vanity="geoffreylgv"><a class="LI-simple-link" href='https://tg.linkedin.com/in/geoffreylgv?trk=profile-badge'>A. Geoffrey LOGOVI</a></div>
+					</p>
+				</div>
+				<div class="tile is-child box">
+					<p class="title">
+					<div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="fr_FR" data-type="vertical" data-theme="dark" data-vanity="geoffreylgv"><a class="LI-simple-link" href='https://tg.linkedin.com/in/geoffreylgv?trk=profile-badge'>A. Geoffrey LOGOVI</a></div>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+</body>
+
 </html>
