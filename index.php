@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Form With Bluma, An alternative from Bootstrap</title>
+	<title>Contact Form With Bulma, An alternative from Bootstrap</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<link rel="stylesheet" href="assets/ndex.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="assets/index.js"></script>
+	<script type="text/javascript" src="assets/tata.js"></script>
 	<style>
 		.panel {
 			max-width: 380px !important;

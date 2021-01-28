@@ -4,6 +4,6 @@ $mailHeaders = "From: " . $_POST["userName"] . "<". $_POST["userEmail"] .">\r\n"
 if(mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
 print "<p class='is-success'>Mail envoyé avec succès.</p>";
 } else {
-print "<p class='is-danger'>Une erreur est survenu lor de l'envoi, réessayer !</p>";
+return error.php;
 }
 ?>
