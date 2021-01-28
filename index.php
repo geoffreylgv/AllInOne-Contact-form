@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='fr'>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact Form With Bulma, An alternative from Bootstrap</title>
+	<title>Contact Form With Bulma and notification with toast alert, An alternative from Bootstrap</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 	<link rel="stylesheet" href="assets/index.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
@@ -37,7 +37,10 @@
 						$("#btnSend").removeClass("is-loading");
 					}
 				});
-			}else{$("#btnSend").removeClass("is-loading");}
+			} else {
+				$("#btnSend").removeClass("is-loading");
+			}
+			$('input[type="text"],texatrea, select, email', this).val('');
 		}
 
 		function validateContact() {
