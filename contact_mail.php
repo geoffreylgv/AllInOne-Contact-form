@@ -1,7 +1,18 @@
 <?php
+$userName = $_POST["userName"];
+$userMail = $_POST["userEmail"];
+$userSubject = $_POST["subject"];
+$userContent = $_POST["content"];
 $toEmail = "zixgeoffrey2@gmail.com";
-$mailHeaders = "From: " . $_POST["userName"] . "<" . $_POST["userEmail"] . ">\r\n";
-if (mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
+$mailHeaders = "From: " . $userName . "<" . $userMail . ">\r\n";
+
+$mail_msg = " 
+            <h3 style='text-align:center;'>Hi Geoffrey, Message from <a href='mailto:$userMail'>$userMail</a>.</h3>
+            <p style='text-align:center;'><b>Subject: $userSubject</b></p>
+            <p style='text-align:center;'>$userContent;</p>
+        ";
+
+if (mail($toEmail, $userSubject, $mail_msg, $mailHeaders)) {
   echo '
 <div class="tata success slide-right-in top-right" id="tata-1611852148311">
     <i class="tata-icon material-icons">check</i>
@@ -26,3 +37,4 @@ if (mail($toEmail, $_POST["subject"], $_POST["content"], $mailHeaders)) {
   </div>
   ';
 }
+

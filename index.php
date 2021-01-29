@@ -40,7 +40,7 @@
 			} else {
 				$("#btnSend").removeClass("is-loading");
 			}
-			$('input[type="text"],texatrea, select, email', this).val('');
+			
 		}
 
 		function validateContact() {
