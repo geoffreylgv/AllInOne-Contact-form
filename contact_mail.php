@@ -3,8 +3,18 @@ $userName = $_POST["userName"];
 $userMail = $_POST["userEmail"];
 $userSubject = $_POST["subject"];
 $userContent = $_POST["content"];
-$toEmail = "zixgeoffrey2@gmail.com";
+$toEmail = "yourmail@gmail.com";
 $mailHeaders = "From: " . $userName . "<" . $userMail . ">\r\n";
+
+$bodySuccessText = '<div class="tata success slide-right-in top-right" id="tata-1611852148311">
+    <i class="tata-icon material-icons">check</i>
+    <div class="tata-body">
+      <h4 class="tata-title">Information</h4>
+      <p class="tata-text">Mail envoyé avec succès. Merci !</p>
+    </div>
+    <button class="tata-close material-icons">clear</button>
+    <div class="tata-progress" style="animation: 10s linear 0s 1 normal forwards running reduceWidth;"></div>
+  </div>';
 
 $mail_msg = " 
             <h3 style='text-align:center;'>Hi Geoffrey, Message from <a href='mailto:$userMail'>$userMail</a>.</h3>
@@ -13,17 +23,7 @@ $mail_msg = "
         ";
 
 if (mail($toEmail, $userSubject, $mail_msg, $mailHeaders)) {
-  echo '
-<div class="tata success slide-right-in top-right" id="tata-1611852148311">
-    <i class="tata-icon material-icons">check</i>
-    <div class="tata-body">
-      <h4 class="tata-title">Information</h4>
-      <p class="tata-text">Mail envoyé avec succès. Merci !</p>
-    </div>
-    <button class="tata-close material-icons">clear</button>
-    <div class="tata-progress" style="animation: 10s linear 0s 1 normal forwards running reduceWidth;"></div>
-  </div>
-';
+  echo $bodyText;
 } else {
   echo '
   <div class="tata error slide-right-in top-right" id="tata-1611852257032">
